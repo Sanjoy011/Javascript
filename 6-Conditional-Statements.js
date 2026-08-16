@@ -20,3 +20,27 @@ function TernaryOperatorPart2(){
     let  grade = marks>80 ? "Grade-A":marks>60 ? "Grade-B":marks>50 ? "Grade-C":marks>30 ? "Grade-D":"Fail";
     alert(grade);
 }
+
+function breakStatement(){
+    let number =Number(prompt("Enter the number: "))
+    for(let i = 0; i<=20; i++){
+        console.log("Number of list " + i);
+        if(i == number){
+            break;
+        }
+        
+    }
+}
+
+
+function continueStatement(){
+    let number = Number(prompt("Enter the number: "));
+    for(let i = 0; i<=10; i++){
+        if(i == number){
+            continue;
+            
+        }
+        console.log(i);
+    }
+}
+
