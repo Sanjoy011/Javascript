@@ -76,3 +76,18 @@ function forInLoop(){
     }
 }
 forInLoop();
+
+function Sanjoy(){
+    let user = {
+        name : prompt("Enter your name: "),
+        age : Number(prompt("Enter your age: ")),
+        email: prompt("Enter your email: ")
+    };
+    for(let key in user){
+        console.log(key + " is :" + user[key]);
+        
+    }
+}
+Sanjoy();
+
+
