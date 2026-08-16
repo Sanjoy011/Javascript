@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Field-Manipulation</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="8-Input-Field-Manipulation.js"></script>
+</head>
+<body class="flex justify-center flex-col items-center bg-black">
+    <h1 class="text-5xl font-bold font-serif flex items-center justify-center mt-50 gap-5"><span class="text-orange-500">Input </span><span class="text-white"> Field</span> <span class="text-green-500">Manipulation</span></h1>
+    <div class="mt-5 space-x-3">
+        <h1 id="heading" class="text-white font-serif"></h1>
+        <input type="text" id="name" placeholder="Enter Your name" class="border border-amber-50 rounded-xl p-2 bg-white outline-none px-4">
+        <input type="text" id="others" placeholder="Enter Your Others name" class="border border-amber-50 rounded-xl p-2 bg-white outline-none px-4">
+        <br>
+        <button class="mt-5 p-1 ml-1 border border-amber-400 rounded-lg bg-orange-500 text-amber-50 font-bold font-serif hover:bg-amber-300 hover:text-black" onclick="getInputFieldValue()">Get value</button>
+        <button class="mt-5 p-1 border border-amber-400 rounded-lg bg-green-500 text-amber-50 font-bold font-serif hover:bg-amber-300 hover:text-black" onclick="setInputFieldValue()">Set value</button>
+        <button class="mt-5 p-1 border border-amber-400 rounded-lg bg-blue-500 text-amber-50 font-bold font-serif hover:bg-amber-300 hover:text-black" onclick="removeInputFieldValue()">Remove value</button>
+        <button class="mt-5 p-1 border border-amber-400 rounded-lg bg-yellow-700 text-amber-50 font-bold font-serif hover:bg-amber-300 hover:text-black" onclick="copyInputFieldValue()">Copy value</button>
+        
+    </div>
+</body>
+</html>
