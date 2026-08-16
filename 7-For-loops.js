@@ -40,3 +40,39 @@ function doWhileloop(){
         console.log("______");
     }while(i<=number);
 }
+
+//ForOf Loop 1st normal for loop then for of loop
+function forOfLoop(){
+    let name = "Sanjoy Bhai how are You?"
+    for(let i = 0; i < name.length; i++){
+        // console.log(name[i]);
+    }
+}
+forOfLoop();
+
+//Or
+
+function forofLoop1(){
+    let number = prompt("Enter here something new : ");
+    for(char of number){
+        if(char == "j"){
+            break;
+        }
+        // console.log(char);
+    }
+}
+forofLoop1();
+
+//ForIn loop
+function forInLoop(){
+    let user = {
+        name : prompt("Enter your name: "),
+        age : Number(prompt("Enter your age: ")),
+        email: prompt("Enter your email: ")
+    };
+    for(let key in user){
+        console.log(key + " is :" + user[key]);
+        
+    }
+}
+forInLoop();
