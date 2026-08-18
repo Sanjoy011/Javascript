@@ -15,3 +15,9 @@ function copyInputFieldValue(){
     let othersValue =document.getElementById('others').value
     document.getElementById('name').value=othersValue;
 }
+
+
+
+
+
+
