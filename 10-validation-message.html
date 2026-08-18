@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make validation Message</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="flex justify-center flex-col items-center bg-black font-serif text-white">
+    <h1 class="text-5xl font-bold font-serif flex items-center justify-center mt-20 gap-5"><span class="text-orange-500">Make </span><span class="text-white"> validation</span> <span class="text-green-500">Input</span></h1>
+    <div class="mt-15 border border-dotted border-amber-500 space-y-3 p-10 text-center rounded-2xl">
+        <h1 class="mt-5 font-bold mb-5 text-2xl text-blue-600">User Informations</h1>
+        <div class="space-y-4">   
+             <input type="text" id="name" placeholder="Enter Your name: " class="border border-white rounded-lg outline-none p-2" autocomplete="off" onblur="showMessage(event)"><br>
+             <p id="name-message" class="text-red-500 font-sans"></p>
+            <input type="email" id="email" placeholder="Enter Your email: " onblur="showEmailMessage(event)" class="border border-white rounded-lg outline-none p-2" autocomplete="off"><br>
+            <p id="name-email" class="text-red-500 font-sans"></p>
+
+            <button class="font-extrabold text-black border p-2 rounded-lg bg-white cursor-pointer hover:bg-amber-400 hover:text-red-700 mt-3">Login</button>
+        </div>  
+    </div>
+    
+
+
+    <script src="10-validation-message.js"></script>
+</body>
+</html>
