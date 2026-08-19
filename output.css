@@ -9,12 +9,10 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-200: oklch(88.5% 0.062 18.334);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-700: oklch(50.5% 0.213 27.518);
-<<<<<<< HEAD
     --color-red-800: oklch(44.4% 0.177 26.899);
-=======
->>>>>>> devlop
     --color-orange-400: oklch(75% 0.183 55.934);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-amber-50: oklch(98.7% 0.022 95.277);
@@ -23,14 +21,16 @@
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-amber-800: oklch(47.3% 0.137 46.201);
+    --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-yellow-700: oklch(55.4% 0.135 66.442);
+    --color-green-200: oklch(92.5% 0.084 155.995);
+    --color-green-300: oklch(87.1% 0.15 154.449);
     --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-sky-500: oklch(68.5% 0.169 237.323);
-<<<<<<< HEAD
     --color-blue-50: oklch(97% 0.014 254.604);
-=======
->>>>>>> devlop
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -51,6 +51,10 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
     --text-9xl: 8rem;
     --text-9xl--line-height: 1;
     --font-weight-bold: 700;
@@ -217,19 +221,11 @@
   .m-10 {
     margin: calc(var(--spacing) * 10);
   }
-<<<<<<< HEAD
-  .m-10 {
-    margin: calc(var(--spacing) * 10);
-  }
   .m-20 {
     margin: calc(var(--spacing) * 20);
   }
   .mt-0 {
     margin-top: 0px;
-=======
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
->>>>>>> devlop
   }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
@@ -245,12 +241,9 @@
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
-<<<<<<< HEAD
   }
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
-=======
->>>>>>> devlop
   }
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
@@ -264,23 +257,8 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
-  }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
-  }
   .ml-1 {
     margin-left: var(--spacing);
-  }
-  .ml-5 {
-    margin-left: calc(var(--spacing) * 5);
-  }
-  .ml-30 {
-    margin-left: calc(var(--spacing) * 30);
-  }
-  .block {
-    display: block;
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
@@ -330,6 +308,9 @@
   .resize {
     resize: both;
   }
+  .list-disc {
+    list-style-type: disc;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -364,14 +345,11 @@
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
-<<<<<<< HEAD
   }
   :where(.space-x-2 > :not(:last-child)) {
     --tw-space-x-reverse: 0;
     margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
     margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
-=======
->>>>>>> devlop
   }
   :where(.space-x-3 > :not(:last-child)) {
     --tw-space-x-reverse: 0;
@@ -456,6 +434,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
+  }
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
   }
@@ -495,6 +476,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-9 {
+    padding-inline: calc(var(--spacing) * 9);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -532,13 +516,10 @@
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
-<<<<<<< HEAD
   }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
-=======
->>>>>>> devlop
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -557,13 +538,8 @@
   .text-black {
     color: var(--color-black);
   }
-<<<<<<< HEAD
   .text-blue-50 {
     color: var(--color-blue-50);
-=======
-  .text-blue-400 {
-    color: var(--color-blue-400);
->>>>>>> devlop
   }
   .text-blue-400 {
     color: var(--color-blue-400);
@@ -573,24 +549,18 @@
   }
   .text-blue-600 {
     color: var(--color-blue-600);
-<<<<<<< HEAD
   }
   .text-green-200 {
     color: var(--color-green-200);
   }
   .text-green-300 {
     color: var(--color-green-300);
-=======
->>>>>>> devlop
   }
   .text-green-500 {
     color: var(--color-green-500);
   }
   .text-orange-500 {
     color: var(--color-orange-500);
-  }
-  .text-red-500 {
-    color: var(--color-red-500);
   }
   .text-red-500 {
     color: var(--color-red-500);
@@ -627,9 +597,6 @@
     --tw-outline-style: none;
     outline-style: none;
   }
-  .placeholder\:text-left::placeholder {
-    text-align: left;
-  }
   @media (hover: hover) {
     .hover\:border-4:hover {
       border-style: var(--tw-border-style);
@@ -641,30 +608,25 @@
     .hover\:bg-amber-400:hover {
       background-color: var(--color-amber-400);
     }
+    .hover\:bg-amber-800:hover {
+      background-color: var(--color-amber-800);
+    }
     .hover\:bg-gray-50:hover {
       background-color: var(--color-gray-50);
     }
     .hover\:text-black:hover {
       color: var(--color-black);
     }
-    .hover\:text-blue-700:hover {
-      color: var(--color-blue-700);
-    }
     .hover\:text-green-500:hover {
       color: var(--color-green-500);
-    }
-    .hover\:text-orange-500:hover {
-      color: var(--color-orange-500);
     }
     .hover\:text-red-700:hover {
       color: var(--color-red-700);
     }
+    .hover\:text-white:hover {
+      color: var(--color-white);
+    }
   }
-}
-@property --tw-space-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
@@ -758,14 +720,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-<<<<<<< HEAD
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
-=======
->>>>>>> devlop
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
