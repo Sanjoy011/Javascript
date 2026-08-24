@@ -10,6 +10,8 @@ function displayItems(){
 
         document.getElementById("value").value = "";
         document.getElementById("position").value = "";
+
+        console.log(users);
     }
 
     
