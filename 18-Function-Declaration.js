@@ -28,3 +28,16 @@ let second = ["Krishna", "Sam"];
 let allUsers = [...first, ...second];
 
 console.log(allUsers);
+
+
+
+//Real-world example: checking login
+function checkPassword(password) {
+    if (password === "12345") {
+        return "Login successful";
+    }
+
+    return "Wrong password";
+}
+
+console.log(checkPassword("1245"));
